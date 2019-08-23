@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/Dot.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+{{>header}}
+
+<div class="container-fluid myContainer">
+
+    <h1 id="test">Welcome to {{title}}</h1>
+    <div class="jumbotron">
+        <form id="form" action="/weather" method="post" >
+            <div class="form-group">
+                <label for="search">Enter your location</label>
+                <input type="text" class="form-control" name="search" aria-describedby="emailHelp" placeholder="Enter Location">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search</button>
+
+                <h1>Forecast:</h1><p> {{forecast}}</p>
+                <h1>Location:</h1> <p> {{location}}</p>
+                <h1> Address:</h1> <p> {{address}}</p>
+
+
+
+        </form>
+
+    </div>
+
+    <p>{{Message}}</p>
+`
+    <p>{{description}}</p>
+</div>
+{{>footer}}
+
+<script>
+    $(function() {
+        $('#form').submit(function(event) {
+            //console.log("called");
+            // event.preventDefault(); // Stops browser from navigating away from page
+        });
+    });
+</script>
+
+</body>
+</html>

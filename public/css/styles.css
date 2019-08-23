@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.myContainer{
+
+    min-height: 42%;
+
+    margin-bottom: -20px;
+}
+
+.logo a{
+    font-family: "Manjari Thin";
+    text-decoration: none !important;
+    color: #000;
+
+}
+.header {
+    padding: 10px;
+    margin: 0;
+    background: orange;
+}
+
+.header h1 {
+    font-size: 35px;
+    color: black;
+
+}
+
+.footer {
+    bottom: 0 !important;
+    clear: bottom;
+
+    position: relative;
+    /*margin-top: 10px;*/
+}
+
+img {
+    width: 800px;
+    height: 400px;
+}
+
+.menu{
+   padding: 0;
+    margin-top: 25px;
+}
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: #000;
+}
+
+.error{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.errorImage{
+    width: 400px;
+    height: 300px;
+}
