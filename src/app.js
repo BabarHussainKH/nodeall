@@ -97,7 +97,7 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 
-const port  = process.env.PORT ||3005
+const port  = process.env.PORT ||3001
 
 const geocode = require("./utils/geocode");
 const forecast = require("./utils/forecast");
