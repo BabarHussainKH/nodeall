@@ -4,10 +4,16 @@ html, body {
 }
 
 .myContainer{
-
     min-height: 42%;
-
+    margin-top: 5px;
     margin-bottom: -20px;
+}
+.myContainer h1{
+    font-size: 25px;
+    color: red;
+}
+.footer h3{
+    font-size: 22px;
 }
 
 .logo a{
