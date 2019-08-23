@@ -97,6 +97,8 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 
+const port  = process.env.PORT ||3005
+
 const geocode = require("./utils/geocode");
 const forecast = require("./utils/forecast");
 const bodyParser = require('body-parser');
@@ -116,8 +118,8 @@ app.use(express.urlencoded());
 
 app.use(bodyParser.json())
 
-app.listen(3005, () => {
-    ///console.log("server is up at port:", 3005);
+app.listen(port, () => {
+    console.log("server is up at port:", port);
 
 });
 
